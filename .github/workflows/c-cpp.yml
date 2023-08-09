@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Setup Debug Session
+      uses: csexton/debugger-action@master
     - name: update
       run: ./scripts/feeds update -a
     - name: install
