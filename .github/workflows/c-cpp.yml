@@ -13,5 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: ./scripts/feeds update -a
+      run: ./scripts/feeds update -a
+    -name: ./scripts/feeds install -a
+      run: ./scripts/feeds install -a
     - name: make
       run: make
