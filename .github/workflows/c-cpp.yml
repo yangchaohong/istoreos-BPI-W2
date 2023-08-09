@@ -20,4 +20,4 @@ jobs:
     - name: Setup Debug Session
       uses: csexton/debugger-action@master
     - name: make
-      run: make
+      run: make -j2
